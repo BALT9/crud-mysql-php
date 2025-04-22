@@ -31,8 +31,8 @@ $datos = $conn->query($sql);
                     <td><?= $fila['edad']; ?></td>
                     <td><?= $fila['antiguedad']; ?></td>
                     <td>
-                        <a href="./form.php">Editar</a>
-                        <a href="./eliminar.php">Eliminar</a>
+                        <a href="./form.php?ci=<?= $fila['ci'];?>">Editar</a>
+                        <a href="./eliminar.php?ci=<?= $fila['ci'];?>">Eliminar</a>
                     </td>
                 </tr>
             <?php endwhile; ?>
